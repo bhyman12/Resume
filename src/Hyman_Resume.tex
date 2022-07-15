@@ -1,0 +1,330 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{enumitem}
+\setlist{nosep}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{}{Ben Hyman}{ 
+\href{mailto:bch2857@rit.edu}{\custombold{bch2857@rit.edu}} | 17 Lincoln Road North, Plainview, NY 11803 | 
+\custombold{516-434-9857}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{Rochester Institute \newline of Technology}
+\descript{\normalsize{Bachelors of Science, \newline Computer Engineering with Microelectronics Engineering Minor}}
+{\location{{\fontspec[Path = ../fonts/lato/]{Lato-Bol}\selectfont\bfseries GPA: 3.93} \\
+Graduation: Expected May 2024 
+}}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Links} 
+%LinkedIn: \href{https://www.linkedin.com/in/dante-sivo}{\custombold{Dante Sivo}}\\
+%GitHub: \href{https://github.com/DanteSivo}{\custombold{DanteSivo}}\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Availability
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Availability}
+January - August 2023 \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+Real Time \& Embedded Systems \\
+Interface and Digital Electronics \\
+Digital Signal Processing \\
+Digital System Design I/II \\
+Applied Programming in C \\
+Computer Architecture \\
+Computer Organization \\
+Assembly \& Embedded Programming \\
+Digital Electronics \\
+Intro. to Semiconductor Devices \\
+% Circuits I/II \\
+% Intro. to Software Engineering \\
+% Computer Science I/II 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+
+
+VHDL \\ C / C++ \\ ARM Assembly \\ Python \\  
+\LaTeX{} \\
+
+
+\sectionsep
+
+\subsection{Software Tools}
+Altium Designer \\
+Orcad \\
+Xilinx Vivado \\
+Altera Quartus II / ModelSim\\ 
+LTSPICE\\
+GitHub\\
+Keil\\
+VSCode\\
+\sectionsep
+
+\subsection{Hardware}
+Oscilloscope\\
+Waveform Generator\\
+Multimeter \\
+Power Supply \\
+Arduino / Teensy\\
+Soldering Iron \\
+Raspberry Pi \\
+\sectionsep
+
+
+%\section{Notes}
+%\location{Active US Security Clearance}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\runsubsection{Hardware Engineering Co-op }
+\descript{\\D3 Engineering }
+\location{January 2022 - August 2022 | West Henrietta, NY} 
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \item Performed high speed schematic and layout hardware design for multiple customer projects using Altium and Orcad.    
+    \item Participated in design reviews to identify potential problems and improvements in designs.
+    \item Assisted in debugging and failure analysis of malfunctioning boards. 
+\end{itemize}
+
+
+\runsubsection{Software Engineering Intern }
+\descript{\\Volvo Group }
+\location{May 2021 - August 2021 | Hagerstown, MD} 
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \item Performed testing and verification on new release candidates for multiple different engine softwares.
+    \item Designed and created new tests and hardware to support more sensors and actuators.
+    \item Discovered a calibration issue in the newest engine software and helped take steps to resolve it. 
+\end{itemize}
+
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+% \runsubsection{Teaching Assistant }
+% \descript{\\Rochester Institute of Technology }
+% \location{August 2020 - Present | Rochester, NY} 
+% \begin{itemize}
+%     \setlength\itemsep{0pt}
+%     \item Taught students in Digital Systems Design I/II classes at RIT during weekly lab exercises.
+%     \item Graded lab assignments and reports and provided feedback to students.
+%     % \item Held office hours outside of class so students could receive assistance.
+% \end{itemize}
+
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+% \sectionsep
+
+% \runsubsection{Media Specialist}
+% \descript{\\Perlman Camp}
+% \location{June 2019 - August 2019 | Lake Como, PA}
+% \begin{itemize}
+%     \setlength\itemsep{0pt}
+%     \item Part of a three person media team at a sleepaway camp.
+%     \item Took photos and videos of activities to upload onto Facebook for parents to view.
+%     \item Edited a weekly video showcasing highlights and other videos for special events throughout the summer.
+% \end{itemize}
+
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+
+\runsubsection{Nixie Tube Clock  \\}
+\descript{February 2021 - Present}
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \item From scratch, designed and built a clock that displays the time using eight IN14 nixie tubes.
+    \item Used KiCAD to design a PCB to mount and connect all components.
+    \item Designed a v2 of the PCB using Altium that features improvements and bug fixes over the original.
+\end{itemize}
+
+\sectionsep
+
+% \runsubsection{Power Racing Series Mustang  \\}
+% \descript{August 2019 - Present}
+% \begin{itemize}
+%     \setlength\itemsep{0pt}
+%     % \item Part of a team that builds an electric go-kart from the body of a children's Power Wheels toy.
+%     \item Worked on the electrical subsystem which included the controller that drives the motor.
+%     % \item Currently working on a display that indicates the battery cell voltages, current being drawn, and power being used using an Arduino. 
+%     \item Designed a custom PCB for a HUD using Autodesk EAGLE that will show battery voltages and power consumption.
+% \end{itemize}
+
+\sectionsep
+
+% \runsubsection{Portable Game Emulator  \\}
+% \descript{September 2019 - Present}
+% \begin{itemize}
+%     \setlength\itemsep{0pt}
+%     \item A handheld retro video game emulator in the style of the original Game Boy.
+%     \item Powered by a Raspberry Pi running the RetroPie operating system and housed in a 3D printed case.
+% \end{itemize}
+
+\runsubsection{MIPS Microprocessor  \\}
+\descript{January 2021 - May 2021}
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \item Created a pipelined MIPS microprocessor using VHDL as a part of Digital Systems Design II.
+    \item Designed and synthesized each component, such as the ALU, Register File, Memory, and Control Unit.
+\end{itemize}
+
+% \sectionsep
+
+
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Organizations}
+
+\runsubsection{RIT Launch Initiative \\}
+\location{Avionics Lead | June 2022 - Present}
+\location{August 2021 - Present | Rochester, NY}
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    % \item Participated in the 2022 Spaceport America Cup and successfully launched our rocket VOID.
+    \item Designed a custom PCB to wirelessly activate a rocket video subsystem that functioned as expected during flight in the 2022 Spaceport America Cup.
+    \item Currently working on a modular backplane-style flight computer for the 2023 Spaceport America Cup
+\end{itemize}
+
+
+\sectionsep
+
+\runsubsection{Engineering House \\}
+\location{August 2019 - Present | Rochester, NY}
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    % \item Member of a community at RIT which lets freshmen students get support throughout their first year of college.
+    \item As an upperclassman, supported freshmen and helped them with whatever problems they may have, school-related or otherwise.
+\end{itemize}
+
+
+\sectionsep
+
+\runsubsection{POBOTS FIRST Robotics Team \\}
+\location{September 2015 - June 2019 | Plainview, NY}
+\begin{itemize}
+    \setlength\itemsep{0pt}
+    \item Head of the electrical team which designed and maintained the electrical systems of the robot.
+    % \item Created the main electrical board which contained all of the critical operation components.
+\end{itemize}
+ 
+%\sectionsep
+
+% \begin{itemize}[itemsep = 1mm, parsep=0pt]
+%     \item Built tire barriers
+%     \item Fixed tire barriers after accident
+%     \item Manage the safety of pedestrians
+%     \item Verify the track was clear for operation
+% \end{itemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
