@@ -1,7 +1,13 @@
 {
-    "latex-workshop.latex.recipe.default": "lastUsed",
+    "latex-workshop.latex.recipe.default": "first",
     "latex-workshop.latex.recipes": [
-    
+
+        {
+            "name": "latexmk (xelatex)",
+            "tools": [
+                "xelatexmk"
+            ]
+        },
         {
             "name": "latexmk 🔃",
             "tools": [
@@ -18,12 +24,6 @@
             "name": "latexmk (lualatex)",
             "tools": [
                 "lualatexmk"
-            ]
-        },
-        {
-            "name": "latexmk (xelatex)",
-            "tools": [
-                "xelatexmk"
             ]
         },
         {
