@@ -1,2 +1,7 @@
 out/*.synctex.gz
 out/*.xdv
+out/*.aux
+out/*.fdb_latexmk
+out/*.fls
+out/*.log
+out/*.out
