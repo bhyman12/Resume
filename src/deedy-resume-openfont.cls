@@ -48,7 +48,7 @@ Last Updated on
 		\fontspec[Path = ../fonts/lato/]{Lato-Lig}\selectfont #2
 	} \\
 	\vspace{5pt}
-	\centering{ \color{headings}\fontspec[Path = ../fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
+	\centering{ \color{headings}\fontspec[Path = ../fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{14pt}\selectfont #3}
 	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 	\vspace{-15pt}
 }
